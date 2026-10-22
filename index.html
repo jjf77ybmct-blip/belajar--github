@@ -27,6 +27,7 @@
   <body>
   <h1>Hai, saya Bandy!</h1>
     <img
+  id="gambarSaya"
   src="53747d47-c988-479f-99f1-92d79d3a688b.png"
   alt="Gambar Bandy"
   style="width: 250px; max-width: 100%; border-radius: 20px;">
@@ -40,6 +41,18 @@
            font-size: 18px; cursor: pointer;">
     Klik sini 😎
   </button>
+    <p>
+  <button onclick="tukarGambar()">
+    Sembunyi / Tunjuk Gambar
+  </button>
+</p>
+
+<script>
+  function tukarGambar() {
+    const gambar = document.getElementById("gambarSaya");
+    gambar.hidden = !gambar.hidden;
+  }
+</script>
 </body>
 </html>
   <button
